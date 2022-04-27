@@ -163,7 +163,7 @@ namespace TestingJsonWebKeys
             //  var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
 
             Jwt.SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.RsaSha256);
-            Jwt.SigningCredentials.Algorithm.
+            
 
             var lastJws = tokenHandler.CreateToken(jsonPayload, Jwt.SigningCredentials);
 
